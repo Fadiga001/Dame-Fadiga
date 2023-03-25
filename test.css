@@ -82,3 +82,22 @@ body{
     transform: scale(0);
     transition-delay: 0s;
 }
+
+.card .notre-image
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .notre-image
+{
+    transition-delay: 0.75s;
+    top: 25%;
+    left: 72%;
+    height: 300px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
