@@ -101,3 +101,47 @@ body{
     height: 300px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
+
+.card .content
+{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content
+{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: hidden;
+    left: 0;
+}
+
+.card .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p
+{
+    color: #fff;
+}
+
+.card .content a
+{
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
